@@ -11,6 +11,8 @@ const Dashboard = () => {
 
     useEffect(() => {
 
+        console.log(session)
+
         if (status === "unauthenticated") {
             router.push('/login')
         }
@@ -20,7 +22,7 @@ const Dashboard = () => {
     return (
         <div className="container">
 
-            <form class="w-screen mx-auto">
+            <form className="w-screen mx-auto">
             <h2 className="text-3xl font-bold my-5 text-center"> Welcome To Dashboard</h2>
                 <div className="w-1/2 bg-slate-900 mx-auto rounded-2xl p-5 my-10">
 
